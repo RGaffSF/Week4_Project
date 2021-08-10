@@ -16,6 +16,7 @@ document.getElementById('movieLookup').addEventListener('click', function (event
         .then(movieData => {
             if (movieData.Response === "True") {
                 console.log(movieData)
+                return displayResults(movieData)
             } else {
                 window.alert('Movie not found!')
             }
@@ -23,8 +24,12 @@ document.getElementById('movieLookup').addEventListener('click', function (event
 })
 
 
-const displayResults = () => {
-
+const displayResults = (movieData) => {
+    document.getElementById('title').innerText = "Title: " + movieData.Title
+    document.getElementById('genre').innerText = "Genre: " + movieData.Genre
+    document.getElementById('rated').innerText = "Rated: " + movieData.Rated
+    document.getElementById('runtime').innerText = "Runtime: " + movieData.Runtime
+    document.getElementById('metascore').innerText = "Metascore: " + movieData.Metascore
 }
 
 
