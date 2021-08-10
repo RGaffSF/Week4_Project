@@ -110,15 +110,5 @@ const displayResults = (movieData) => {
 }
 
 
-  // document.getElementById('title').innerText = "Title: " + movieData.Title
-  // document.getElementById('genre').innerText = "Genre: " + movieData.Genre
-  // document.getElementById('rated').innerText = "Rated: " + movieData.Rated
-  // document.getElementById('runtime').innerText = "Runtime: " + movieData.Runtime
-  // document.getElementById('metascore').innerText = "Metascore: " + movieData.Metascore
 
-  // document.getElementById('title2').innerText = "Title: " + movieData.Title
-  // document.getElementById('genre2').innerText = "Genre: " + movieData.Genre
-  // document.getElementById('rated2').innerText = "Rated: " + movieData.Rated
-  // document.getElementById('runtime2').innerText = "Runtime: " + movieData.Runtime
-  // document.getElementById('metascore2').innerText = "Metascore: " + movieData.Metascore
 
