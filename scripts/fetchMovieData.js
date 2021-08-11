@@ -1,6 +1,6 @@
 const fetchMovieData = (movieTitle) => {
     let responseObj = {};
-    fetch('http://www.omdbapi.com/?apikey=a6df6408&t=' + movieTitle)
+    fetch('https://www.omdbapi.com/?apikey=a6df6408&t=' + movieTitle)
         .then((response) => {
             if (response.ok) {
                 responseObj = response.json();
