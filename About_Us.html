@@ -19,28 +19,52 @@
       <li class="listnavstyle"><a class="links active" href="About_Us.html">Info on the Creators</a></li>
     </ul><br><br>
     
-
+      <div class="splitPage">
       <h4 id="brandens_list">Branden's List</h4> 
       <button type="button" class="collapsible2">Django Unchained</button>
-      <p class="content">"With the help of a German bounty-hunter, a freed slave sets out to rescue his wife from a brutal plantation-owner in Mississippi."</p><br>
+      <p class="content2">"With the help of a German bounty-hunter, a freed slave sets out to rescue his wife from a brutal plantation-owner in Mississippi."</p><br>
       <button type="button" class="collapsible2">The Matrix</button>
-      <p class="content">"When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence."</p><br>
+      <p class="content2">"When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence."</p><br>
       <button type="button" class="collapsible2">Spider-Man: Homecoming</button>
-      <p class="content">"Peter Parker balances his life as an ordinary high school student in Queens with his superhero alter-ego Spider-Man, and finds himself on the trail of a new menace prowling the skies of New York City."</p><br><br><br>
+      <p class="content2">"Peter Parker balances his life as an ordinary high school student in Queens with his superhero alter-ego Spider-Man, and finds himself on the trail of a new menace prowling the skies of New York City."</p><br><br><br>
 
       <h4 id="randalls_list">Randall's List</h4> 
       <button type="button" class="collapsible2">Gladiator</button>
-      <p class="content">"Commodus (Joaquin Phoenix) takes power and strips rank from Maximus (Russell Crowe), one of the favored generals of his predecessor and father, Emperor Marcus Aurelius, the great stoical philosopher. Maximus is then relegated to fighting to the death in the gladiator arenas.
+      <p class="content2">"Commodus (Joaquin Phoenix) takes power and strips rank from Maximus (Russell Crowe), one of the favored generals of his predecessor and father, Emperor Marcus Aurelius, the great stoical philosopher. Maximus is then relegated to fighting to the death in the gladiator arenas.
          "</p><br>
       <button type="button" class="collapsible2">The Matrix</button>
-      <p class="content">"When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence."</p><br>
+      <p class="content2">"When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence."</p><br>
       <button type="button" class="collapsible2">Goodfellas</button>
-      <p class="content">"A young man grows up in the mob and works very hard to advance himself through the ranks. He enjoys his life of money and luxury, but is oblivious to the horror that he causes. A drug addiction and a few mistakes ultimately unravel his climb to the top. Based on the book "Wiseguy" by Nicholas Pileggi.
+      <p class="content2">"A young man grows up in the mob and works very hard to advance himself through the ranks. He enjoys his life of money and luxury, but is oblivious to the horror that he causes. A drug addiction and a few mistakes ultimately unravel his climb to the top. Based on the book "Wiseguy" by Nicholas Pileggi.
          "</p><br>
+      </div>
 
+         <div class="splitPage">
+         <section id="app">
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <div class="comment">
+                <p v-for="items in item" v-text="items"></p>
+                  </div><!--End Comment-->
+                  </div><!--End col -->
+                  </div><!-- End row -->
+              <div class="row">
+                <div class="col-6">
+              <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                  <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                </div><!-- End col -->
+              </div><!--End Row -->
+            </div><!--End Container -->
+          </section><!-- end App -->
+         </div>
  </body>
 
  <footer>
  </footer>
- <script src="scripts/aboutUs.js"></script>
+ <script defer src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+ <script defer src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+ <script defer src="scripts/aboutUs.js"></script>
+ <script defer src="scripts/commentsBox.js"></script>
+
 </html>
