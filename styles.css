@@ -30,3 +30,17 @@ background-color: gray;
 
   .active, .collapsible:hover {
     background-color: gray;
+  }
+
+  .body {
+    background-image: url(assets/movie_background.png)
+  }
+
+  .searched_movie_result {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  width: 500px;
+  margin: auto;
+    
+  }

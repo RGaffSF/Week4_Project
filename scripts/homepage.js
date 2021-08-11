@@ -5,6 +5,7 @@ document.getElementById('movieLookup').addEventListener('click', function (event
 
 
    fetchMovieData(movieTitle)
+   getRandomImage()
 })
 
 
@@ -17,3 +18,10 @@ const displayResults = (movieData) => {
 }
 
 
+let ImageArray = ['Img1.jfif','Img2.png','Img3.jpg'];
+
+function getRandomImage() {
+    const num = Math.floor( Math.random() * 3);
+    const img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + 'assets/random_pics/' + img + '" width="250px">')
+}
