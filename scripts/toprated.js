@@ -1,9 +1,13 @@
-document.getElementById('Top10Lookup').addEventListener('click', function (event) {
+document.getElementById('genreLookup').addEventListener('click', function (event) {
   event.preventDefault();
 
   let movieGenre = document.getElementById('PickedGenre').value
-  window.open('https://www.imdb.com/search/title/?genres=' + movieGenre + '&sort=user_rating&title_type=feature&num_votes=25000,');
 
+  if (movieGenre === "") {
+    window.alert('Please select a genre!')
+  } else {
+  window.open('https://www.imdb.com/search/title/?genres=' + movieGenre + '&sort=user_rating&title_type=feature&num_votes=25000,');
+  }
 
 })
 

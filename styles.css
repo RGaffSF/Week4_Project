@@ -144,6 +144,20 @@ background-color: gray;
      font-size: 36px;
    }
 
+   #PickedGenre {
+    width: 360px;
+    height: 55px;
+    font-size: 18px;
+  }
+
+  #genreLookup{
+   width: 100px;
+    height: 55px;
+    font-size: 20px;
+    padding: -8px;
+    margin: 0;
+  }
+
    #brandens_list{
     font-family: candara;
     margin: 0;
