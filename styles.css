@@ -23,6 +23,20 @@ background-color: gray;
     float: left;
     /* font-size: 15px; */
   }
+
+  .collapsible2 {
+    background-color: gray;
+    color: black;
+    cursor: pointer;
+    padding: 0px;
+    /* width: 400px;
+    height: 400px; */
+    border: none;
+    text-align: center;
+    outline: none;
+    font-family: candara;
+    font-size: 18px;
+  }
   
   .content {
     padding: 0 18px;
@@ -30,9 +44,14 @@ background-color: gray;
     width: 25%;
     overflow: hidden;
     background-color: gray;
+    font-family: candara;
   }
 
-  .active, .collapsible:hover {
+  .reveal, .collapsible:hover {
+    background-color: gray;
+  }
+
+  .reveal, .collapsible2:hover {
     background-color: gray;
   }
 
@@ -101,6 +120,8 @@ background-color: gray;
   .active {
     background-color: rgb(11, 8, 187);
    }
+
+
  
    #movieTitle {
      width: 360px;
@@ -112,4 +133,18 @@ background-color: gray;
     width: 100px;
      height: 55px;
      font-size: 36px;
+   }
+
+   #brandens_list{
+    font-family: candara;
+    margin: 0;
+    list-style-type: none;
+    font-size: 28px;
+   }
+
+   #randalls_list {
+    font-family: candara;
+    margin: 0;
+    list-style-type: none;
+    font-size: 28px;
    }
