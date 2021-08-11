@@ -15,6 +15,9 @@ const displayResults = (movieData) => {
     document.getElementById('rated').innerText = "Rated: " + movieData.Rated
     document.getElementById('runtime').innerText = "Runtime: " + movieData.Runtime
     document.getElementById('metascore').innerText = "Metascore: " + movieData.Metascore
+    document.getElementById('Released').innerText = "Released: " + movieData.Released
+    document.getElementById('BoxOffice').innerText = "Box Office: " + movieData.BoxOffice
+    document.getElementById('Plot').innerText = "Plot: " + movieData.Plot
 }
 
 
