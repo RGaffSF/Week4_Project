@@ -21,18 +21,18 @@ const displayResults = (movieData) => {
     document.getElementById('BoxOffice').innerText = "Box Office: " + movieData.BoxOffice
     document.getElementById('Plot').innerText = "Plot: " + movieData.Plot
     if (movieData.Metascore > 90) {
-        bananapic.innerHTML = ('<img src=' + '"assets/P1_Banana.jpg">'+ "5 out of 5 Bananas")
+        bananapic.innerHTML = ('<img src=' + '"assets/P1_Banana.jpg"><br>'+ "5 out of 5 Bananas")
     } else if
         (movieData.Metascore > 80 && movieData.Metascore < 89) {
-        bananapic.innerHTML = ('<img src=' + '"assets/P2_Banana.jpg">'+ "4 out of 5 Bananas")
+        bananapic.innerHTML = ('<img src=' + '"assets/P2_Banana.jpg"><br>'+ "4 out of 5 Bananas")
     } else if
         (movieData.Metascore > 70 && movieData.Metascore < 79) {
-        bananapic.innerHTML = ('<img src=' + '"assets/P3_Banana.jpg">'+ "3 out of 5 Bananas")
+        bananapic.innerHTML = ('<img src=' + '"assets/P3_Banana.jpg"><br>'+ "3 out of 5 Bananas")
     } else if
         (movieData.Metascore > 60 && movieData.Metascore < 69) {
-        bananapic.innerHTML = ('<img src=' + '"assets/P4_Banana.jpg">'+ "2 out of 5 Bananas")
+        bananapic.innerHTML = ('<img src=' + '"assets/P4_Banana.jpg"><br>'+ "2 out of 5 Bananas")
     } else
-        bananapic.innerHTML = ('<img src=' + '"assets/P5_Banana.jpg">'+ "1 out of 5 Bananas")
+        bananapic.innerHTML = ('<img src=' + '"assets/P5_Banana.jpg"><br>'+ "1 out of 5 Bananas")
 }
 
 
