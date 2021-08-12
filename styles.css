@@ -240,4 +240,22 @@ button.primaryContained:hover {
   text-align: left;
 }
 
+#thankYou {
+  width: 100%;
+  height: 300px; 
+  border: none; 
+  background-color: #04AA6D; 
+  color: white; 
+  padding: 14px 28px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  text-align: center;
+}
 
+
+#addGif {
+  width: 900px;
+  height: 450px;
+  text-align: center;
+  margin: auto;
+}
