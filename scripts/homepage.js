@@ -32,7 +32,7 @@ const displayResults = (movieData) => {
         (movieData.Metascore > 60 && movieData.Metascore < 69) {
         bananapic.innerHTML = ('<img src=' + '"assets/P4_Banana.jpg">'+ "2 out of 5 Bananas")
     } else
-        bananapic.innerHTML = ('<img src=' + '"assets/P4_Banana.jpg">'+ "1 out of 5 Bananas")
+        bananapic.innerHTML = ('<img src=' + '"assets/P5_Banana.jpg">'+ "1 out of 5 Bananas")
 }
 
 
