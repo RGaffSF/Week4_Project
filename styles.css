@@ -1,5 +1,6 @@
 .default {
-background-color: gray;
+/* background-color: gray; */
+
 }
 .center{
     text-align: center;
@@ -61,11 +62,12 @@ background-color: gray;
   }
 
   .body {
-    background-image: url(assets/background2.jpg);
+    /* background-image: url(assets/background2.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-image: url("assets/theaterbackground.jpg");
   }
 
   .searched_movie_result {
