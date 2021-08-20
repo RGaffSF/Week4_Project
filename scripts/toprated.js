@@ -47,9 +47,10 @@ document.getElementById('The Dark Knight').addEventListener('click', function (e
   fetchMovieData('The Dark Knight')
 })
 
-document.getElementById('12 Angry Men').addEventListener('click', function (event) {
+document.querySelector('.fetchMovie').addEventListener('click', function (event) {
   event.preventDefault();
-  fetchMovieData('12 Angry Men')
+  //console.log(event.target.parentElement)
+  fetchMovieData(event.target.parentElement.id)
 })
 
 
