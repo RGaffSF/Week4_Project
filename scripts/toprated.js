@@ -6,7 +6,7 @@ document.getElementById('genreLookup').addEventListener('click', function (event
   if (movieGenre === "") {
     window.alert('Please select a genre!')
   } else {
-  window.open('https://www.imdb.com/search/title/?genres=' + movieGenre + '&sort=user_rating&title_type=feature&num_votes=25000,');
+    window.open('https://www.imdb.com/search/title/?genres=' + movieGenre + '&sort=user_rating&title_type=feature&num_votes=25000,');
   }
 
 })
@@ -26,6 +26,13 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+topMoviesObeject = {
+  "The Shawshank Redemption": 1,
+  "The Godfather": 2,
+  "The Godfather2": 3,
+  "The Dark Knight": 4,
+  "12 Angry Men": 5,
+}
 
 document.getElementById('The Shawshank Redemption').addEventListener('click', function (event) {
   event.preventDefault();
@@ -54,7 +61,7 @@ document.getElementById('12 Angry Men').addEventListener('click', function (even
 })
 
 
-
+/*
 const displayResults = (movieData) => {
   if (movieData.Title === 'The Shawshank Redemption') {
     document.getElementById('title1').innerText = "Title: " + movieData.Title
@@ -112,7 +119,30 @@ const displayResults = (movieData) => {
     document.getElementById('released5').innerText = "Released: " + movieData.Released
   }
 }
+*/
 
+const displayResults = (movieData) => {
+  if (movieData.Title === 'The Shawshank Redemption') {
+    dynamicId = 1
+  } else if (movieData.Title === 'The Godfather') {
+    dynamicId = 2
+  } else if (movieData.Title === 'The Godfather: Part II') {
+    dynamicId = 3
+  } else if (movieData.Title === 'The Dark Knight') {
+    dynamicId = 4
+  } else if (movieData.Title === '12 Angry Men') {
+    dynamicId = 5
+  } else {
+    dynamicId = 9
+  }
 
-
-
+document.getElementById(`title${dynamicId}`).innerText = "Title: " + movieData.Title
+document.getElementById(`genre${dynamicId}`).innerText = "Genre: " + movieData.Genre
+document.getElementById(`rated${dynamicId}`).innerText = "Rated: " + movieData.Rated
+document.getElementById(`runtime${dynamicId}`).innerText = "Runtime: " + movieData.Runtime
+document.getElementById(`metascore${dynamicId}`).innerText = "Metascore: " + movieData.Metascore
+document.getElementById(`boxOffice${dynamicId}`).innerText = "Box Office: " + movieData.BoxOffice
+document.getElementById(`awards${dynamicId}`).innerText = "Awards: " + movieData.Awards
+document.getElementById(`director${dynamicId}`).innerText = "Director(s): " + movieData.Director
+document.getElementById(`released${dynamicId}`).innerText = "Released: " + movieData.Released
+}
